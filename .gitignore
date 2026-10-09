@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.tmp
 
 # C extensions
 *.so
@@ -58,13 +59,15 @@ cover/
 # Environments & SQLite
 .env
 .venv
+.venv/
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
 
-# SQLite databases & temp storage
+# Vector Store & SQLite databases & temp storage
+data/
 *.db
 *.sqlite
 *.sqlite3
