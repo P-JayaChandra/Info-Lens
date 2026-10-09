@@ -11,6 +11,7 @@ __pycache__/
 build/
 develop-eggs/
 dist/
+dist-ssr/
 downloads/
 eggs/
 .eggs/
@@ -26,9 +27,18 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# PyInstaller
-*.manifest
-*.spec
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node dependencies & local env
+node_modules/
+*.local
 
 # Unit test / coverage reports
 htmlcov/
@@ -45,7 +55,7 @@ coverage.xml
 .pytest_cache/
 cover/
 
-# Environments
+# Environments & SQLite
 .env
 .venv
 env/
@@ -61,3 +71,14 @@ venv.bak/
 backend/data/storage/
 backend/data/uploads/
 .health_probe
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
